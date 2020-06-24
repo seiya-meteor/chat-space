@@ -28,10 +28,11 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group-name|text|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :users
+- belongs_to :user
+- belongs_to :group
 
 ## usersテーブル
 |Column|Type|Options|
@@ -43,11 +44,25 @@ Things you may want to cover:
 ### Association
 - has_many :chats
 - has_many :groups_users
+- has_many :groups, through: :groups_users
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
+### Association
+- has_many :chats 
+- has_many :users, through: :groups_users
+- has_many :groups_users
 
 ## chatsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |coment|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|grupe_name|integer|null: false, foreign_key: true|
 |imag|string|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+belongs_to :user
+belongs_to :group
