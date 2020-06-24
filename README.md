@@ -28,8 +28,26 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|group-name|text|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- belongs_to :users
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false|
+|passward|string|null: false|
+
+### Association
+- has_many :chats
+- has_many :groups_users
+
+## chatsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|coment|text|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|grupe_name|integer|null: false, foreign_key: true|
+|imag|string|
