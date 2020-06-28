@@ -2,22 +2,24 @@
   box-sizing: border-box;
 }
 
+$many-color: #ffffff;
+
 .wrapper {
   display: flex;
 }
 
 .Side-ber {
   height: 100vh;
-  color: #ffffff;
+  color: $many-color;
   width: 300px;
-  &__user-name {
+    &__user-name {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100px;
   background-color: #253141;
   padding: 0 20px;
- }
+  }
 }
 
 .Side-items {
@@ -25,24 +27,25 @@
   margin: 0 20px;
   height: 20px;
   display: flex;
-  &__name {
+    &__name {
     width: calc(100vw - 60vw);
     font-weight: bold;
-  }
-  &__icon {
+    }
+
+    &__icon {
     width: 60px;
     display: flex;
     justify-content: flex-end;
-  }
+    }
 }
 
 .icon1 {
-  color: #ffffff;
+  color: $many-color;
   margin-right:5px;
 }
 
 .icon2 {
-  color: #ffffff;
+  color: $many-color;
 }
 .Group-list {
   background-color: #2f3e51;
@@ -55,12 +58,12 @@
   padding: 20px 0 40px;
   &__name {
     font-size: 15px;
-    color: #ffffff ;
+    color: $many-color ;
   }
   &__message {
     font-size: 11px;
     margin-top: 5px;
-    color: #ffffff;
+    color: $many-color;
   }
 }
 
