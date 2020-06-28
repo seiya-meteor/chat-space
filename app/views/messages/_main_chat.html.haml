@@ -1,0 +1,41 @@
+.Chat
+  .Header
+    .Header__group
+      .Header__group-name
+        test
+      %ul.Header__member-list
+        Member:
+        %li.Header__member
+        you
+    %a.Header__edit-btn(href="/#/")
+      Edit
+  .Message-list
+    .Message-list__box
+      .Message-list__zone
+        .Message-list__user
+          masa
+        .Message-list__day
+          2011/11/11
+      .Message
+        %p.Message__speak
+          aaaaa
+    .Message-list__box
+      .Message-list__zone
+        .Message-list__user
+          masa
+        .Message-list__day
+          2011/11/11
+      .Message
+        %p.Message__speak
+          aaaaa
+
+  .Footer
+    %form.Form(action="#")
+      .Form__contents
+        %input.Form__input{:placeholder =>"text a message", :type =>"text",}
+        %label{class: "Form__image"}
+          = icon('fas', 'image',)
+          %input{type: "file"}
+      %input.Form__submit{:type => "submit", :value => "Send", :name => "commit"}
+        
+
