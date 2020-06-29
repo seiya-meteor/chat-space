@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+$many-color: #ffffff;
+
+.wrapper {
+  display: flex;
+}
+
+.Side-ber {
+  height: 100vh;
+  color: $many-color;
+  width: 300px;
+    &__user-name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: #253141;
+  padding: 0 20px;
+  }
+}
+
+.Side-items {
+  width: 260px;
+  margin: 0 20px;
+  height: 20px;
+  display: flex;
+    &__name {
+    width: calc(100vw - 60vw);
+    font-weight: bold;
+    }
+
+    &__icon {
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+
+.icon1 {
+  color: $many-color;
+  margin-right:5px;
+}
+
+.icon2 {
+  color: $many-color;
+}
+.Group-list {
+  background-color: #2f3e51;
+   height: calc(100vh - 100px);
+   padding: 0 20px;
+   font-weight: bold;
+}
+
+.Group {
+  padding: 20px 0 40px;
+  &__name {
+    font-size: 15px;
+    color: $many-color ;
+  }
+  &__message {
+    font-size: 11px;
+    margin-top: 5px;
+    color: $many-color;
+  }
+}
+
+
+.Chat {
+  width: calc(100vw - 300px);
+}
+.Header {
+  height: 100px;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  &__group-name {
+    margin-top: 35px;
+    color: #333333;
+    font-size: 20px;
+  }
+  &__member-list {
+    display: flex;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999999;
+  }
+  &__edit-btn {
+    color: #38aef0;
+    font-size: 16px;
+    margin-top: 28px;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid #38aef0;
+    text-decoration: none;
+  }
+}
+
+.Message-list {
+  height: calc(100vh - 100px - 90px);
+  overflow :scroll;
+  background-color: #fafafa;
+  padding: 35px 40px 0;
+  &__box {
+    margin-bottom: 46px;
+  }
+  &__zone {
+    display: flex;
+  }
+  &__user {
+    color: #333333;
+    font-size: 16px;
+  }
+  &__day {
+    color: #999999;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+} 
+.Message {
+  margin-top: 12px;
+  &__speak {
+    color: #434a54;
+    font-size: 14px;
+  }
+}
+
+.Footer {
+  height: 90px;
+  background-color: #d2d2d2;
+  padding: 20px 50px 20px 40px;
+  box-sizing: border-box;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+  &__contents {
+    width: 100%;
+    position: relative;
+  }
+  &__input {
+    height: 50px;
+    border: none;
+    width: 100%;
+    padding: 0 45px 0 15px;
+  }
+  &__image{
+    position: absolute;
+    right: 10px;
+  input {
+     display: none;
+    }
+  }
+.fa-image {
+  line-height: 50px;
+  font-size: 25px;
+  }
+ &__submit {
+  padding: 0 30px;
+  margin-left: 15px;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #38aef0;
+  border: none;
+  text-align: center;
+  }
+}
