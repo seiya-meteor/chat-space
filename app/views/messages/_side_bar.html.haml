@@ -1,13 +1,13 @@
 .Side-ber
   .Side-ber__user-name
     .Side-items
-      .Side-items__name
-        せい
+      %h3.Side-items__name
+        = current_user.name
       %ul.Side-items__icon
         = link_to "/#/", class: "Side__edit" do
           = icon('fas', 'edit', class:'icon1')
           %span<>
-        = link_to "/#/", class: "Side__cog" do
+        = link_to edit_user_path(current_user), class: "Side__cog" do
           = icon('fas', 'cog', class:'icon2')
           %span<>
   .Group-list
