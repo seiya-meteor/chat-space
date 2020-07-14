@@ -47,11 +47,12 @@ $many-color: #ffffff;
 .icon2 {
   color: $many-color;
 }
-.Group-list {
+.GroupList {
   background-color: #2f3e51;
    height: calc(100vh - 100px);
    padding: 0 20px;
    font-weight: bold;
+   overflow: scroll;
 }
 
 .Group {
@@ -98,6 +99,10 @@ $many-color: #ffffff;
     border: 1px solid #38aef0;
     text-decoration: none;
   }
+}
+
+.Header__member-list li{
+  margin-right: 5px;
 }
 
 .Message-list {
